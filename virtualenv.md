@@ -40,3 +40,12 @@ INFO: Successfully saved requirements file in ./requirements.txt
 
 The `requirements.txt` file now contains the dependencies of the project or repository.
 
+To use the `requirements.txt` file, we use the following `pip` command,
+
+```shell script
+$ virtualenv demo -- python=python3
+$ source demo/bin/activate
+$ (demo) pip install -r requirements.txt
+```
+
+The `-r` parameter in `pip` command specifies the list of dependencies.
