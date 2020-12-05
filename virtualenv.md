@@ -25,3 +25,15 @@ wheel      0.34.2
 ```
 
 The `pip list` command is used to show the libraries/packages installed. When a virtual environment is activate, it lists the libraries/packages in that virtual environment.
+
+To list the dependencies of a project or a repository, we use the `pipreqs` command like so,
+
+```
+$ virtualenv project-1-env --python=python3
+$ source project-1-env/bin/activate
+$ (project-1-env) cd <repository name>
+$ pipreqs ./ --encoding=utf-8
+INFO: Successfully saved requirements file in ./requirements.txt
+```
+
+The `requirements.txt` file now contains the dependencies of the project or repository.
