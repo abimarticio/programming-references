@@ -43,7 +43,7 @@ The `requirements.txt` file now contains the dependencies of the project or repo
 To use the `requirements.txt` file, we use the following `pip` command,
 
 ```shell script
-$ virtualenv demo -- python=python3
+$ virtualenv demo --python=python3
 $ source demo/bin/activate
 $ (demo) pip install -r requirements.txt
 ```
