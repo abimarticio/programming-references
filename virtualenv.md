@@ -16,7 +16,9 @@ $ source <environment name>/bin/activate
 The code above should have an output similar to this,
 
 ```shell script
-$ pip list
+$ virtualenv project-1-env --python=python3
+$ source project-1-env/bin/activate
+$ (project-1-env) pip list
 Package    Version 
 ---------- ------- 
 pip        20.1.1 
@@ -37,3 +39,4 @@ INFO: Successfully saved requirements file in ./requirements.txt
 ```
 
 The `requirements.txt` file now contains the dependencies of the project or repository.
+
